@@ -2,6 +2,8 @@ import { useState } from 'react'
 // import './App.css'
 import Home from './components/Home'
 import Quiz from './components/Quiz'
+import blueBlob from './assets/images/blob-blue.png'
+import yellowBlob from './assets/images/blob-yellow.png'
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
   return (
     <>
       {renderPage()}
+      <img className='yellow-blob' src={yellowBlob} alt='yellow blob'/>
+      <img className='blue-blob'src={blueBlob} alt='blue blob'/>
     </>
   )
 }
